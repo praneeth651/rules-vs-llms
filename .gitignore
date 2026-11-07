@@ -1,0 +1,26 @@
+# Dependencies / build
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+dist/
+*.egg-info/
+
+# Env & secrets
+.env
+.env.*
+!.env.example
+
+# IDE / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.qodo/
+.xgrok/
+*.swp
+
+# Logs
+logs/
+*.log

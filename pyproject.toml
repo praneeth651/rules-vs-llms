@@ -1,0 +1,28 @@
+[project]
+name = "rules-vs-llms"
+version = "1.0.0"
+description = "Rules vs LLMs Take-Home Assignment - Fire AI"
+requires-python = ">=3.10"
+
+dependencies = [
+    "pytest>=7.0",
+    "pandas>=2.0",
+    "google-generativeai>=0.5.0",
+    "tabulate>=0.9",
+    "requests>=2.31",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest-cov",
+    "black",
+    "ruff",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["project_a/tests", "project_b/tests"]
+pythonpath = ["."]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.backends._legacy:_Backend"
